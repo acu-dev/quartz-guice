@@ -6,6 +6,10 @@
     <artifactId>quartz-guice</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>Quartz module for guice</name>
+    <scm>
+        <connection>scm:svn:https://source.acu.edu/svn/quartz-guice/trunk</connection>
+        <developerConnection>scm:svn:https://source.acu.edu/svn/quartz-guice/trunk</developerConnection>
+    </scm>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -44,6 +48,12 @@
                 <configuration>
                     <source>1.5</source>
                     <target>1.5</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <tagBase>https://source.acu.edu/svn/quartz-guice/tags</tagBase>
                 </configuration>
             </plugin>
         </plugins>
@@ -100,5 +110,4 @@
             <url>https://source.acu.edu/mvn/content/repositories/acu-private-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
-    
 </project>
