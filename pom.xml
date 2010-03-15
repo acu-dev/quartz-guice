@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>edu.acu.wip</groupId>
     <artifactId>quartz-guice</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.1</version>
     <name>Quartz module for guice</name>
     <scm>
-        <connection>scm:svn:https://source.acu.edu/svn/quartz-guice/trunk</connection>
-        <developerConnection>scm:svn:https://source.acu.edu/svn/quartz-guice/trunk</developerConnection>
+        <connection>scm:svn:https://source.acu.edu/svn/quartz-guice/tags/quartz-guice-1.1</connection>
+        <developerConnection>scm:svn:https://source.acu.edu/svn/quartz-guice/tags/quartz-guice-1.1</developerConnection>
     </scm>
     <dependencies>
         <dependency>
