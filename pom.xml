@@ -5,9 +5,12 @@
     <artifactId>quartz-guice</artifactId>
     <version>1.2-SNAPSHOT</version>
     <name>Quartz module for guice</name>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
     <scm>
-        <connection>scm:svn:https://source.acu.edu/svn/quartz-guice/trunk</connection>
-        <developerConnection>scm:svn:https://source.acu.edu/svn/quartz-guice/trunk</developerConnection>
+        <developerConnection>scm:git:file://${basedir}</developerConnection>
+        <url>scm:git:file://${basedir}</url>
     </scm>
     <dependencies>
         <dependency>
@@ -44,15 +47,10 @@
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
                 <configuration>
                     <source>1.5</source>
                     <target>1.5</target>
-                </configuration>
-            </plugin>
-            <plugin>
-                <artifactId>maven-release-plugin</artifactId>
-                <configuration>
-                    <tagBase>https://source.acu.edu/svn/quartz-guice/tags</tagBase>
                 </configuration>
             </plugin>
         </plugins>
@@ -102,11 +100,11 @@
     <distributionManagement>
         <repository>
             <id>acu-private</id>
-            <url>https://source.acu.edu/mvn/content/repositories/acu-private/</url>
+            <url>https://source.acu.edu/mvn/content/repositories/acu/</url>
         </repository>
         <snapshotRepository>
             <id>acu-private-snapshots</id>
-            <url>https://source.acu.edu/mvn/content/repositories/acu-private-snapshots/</url>
+            <url>https://source.acu.edu/mvn/content/repositories/acu-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 </project>

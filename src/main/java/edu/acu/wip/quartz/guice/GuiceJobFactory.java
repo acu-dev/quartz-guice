@@ -25,13 +25,9 @@ public class GuiceJobFactory implements JobFactory {
 
 		try {
 			job = (Job) injector.getInstance((Class<? extends Job>)triggerFiredBundle.getJobDetail().getJobClass());
-//			job = (Job) triggerFiredBundle.getJobDetail().getJobClass()
-//					.newInstance();
 		} catch (Exception ex) {
 			throw new SchedulerException(ex);
 		}
-
-//		injector.injectMembers(job);
 
 		return job;
 	}
